@@ -1,0 +1,33 @@
+This is a set of small compiler benchmarks.
+
+It's in a rough state. There is no infrastructure - you have to individually
+compile and run the benchmarks with the different compilers you are interested
+in, and time the result. However, multiple people have expressed interest,
+so I am making the code publicly available.
+
+Each directory bm1..bm10 contains one benchmark test.
+
+Typically, there is a "driver" program (driver.c) and an additional module
+which is the benchmark itself (bm1.c, bm2.c, etc). The reason for having
+two separate files is to prevent whole-program optimization that would skew
+the results. To get a proper result you should:
+
+ - compile the driver.c file *once* with any compiler, to produce a
+   "driver.o" object file
+ - compile the benchmark module (bmX.c) with each compiler you want to test
+   and link the result with the driver.o file. eg:
+
+	gcc -O3 -fomit-frame-pointer -std=c99 driver.o bm1.c
+
+ - run and time the result in each case:
+	time ./a.out
+
+ * Just to be clear, to compare two compilers, you should *not* recompile
+   driver.c with the second compiler.
+ * Note that the benchmarks are written in the C99 dialect.
+ * Further information about individual benchmarks is usually in the
+   comments in the bmX.c file
+ * If anyone improves the infrastructure or comes up with interesting new
+   test programs, I would appreciate being provided with patches.
+
+Davin McCall - davmac@davmac.org
