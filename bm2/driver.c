@@ -1,4 +1,4 @@
-#include "strucs.h"
+#include "../bm3/strucs.h"
 
 int main(int argc, char **argv)
 {
