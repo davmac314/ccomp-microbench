@@ -1,12 +1,11 @@
 #include "strucs.h"
 
-somestruct foo(void);
-void bar(somestruct);
-
-int main(int argc, char **arv)
+somestruct foo()
 {
-    /* int array[10]; */
-    for (int i = 0; i < 500000*10; i++) {
-        bar(foo());
-    }
+    return (somestruct){1, 2, 3};
+}
+
+void bar(somestruct ss)
+{
+    return;
 }
