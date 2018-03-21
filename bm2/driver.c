@@ -1,4 +1,5 @@
-#include "../bm3/strucs.h"
+//note: not the same structs as in bm3
+#include "strucs.h"
 
 int main(int argc, char **argv)
 {
