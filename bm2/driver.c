@@ -1,5 +1,5 @@
 //note: not the same structs as in bm3
-#include "structs.h"
+#include "strucs.h"
 
 int main(int argc, char **argv)
 {
