@@ -1,3 +1,4 @@
+//structs of bm2
 struct goober {
     int a;
     int b;
