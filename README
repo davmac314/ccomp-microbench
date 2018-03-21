@@ -12,7 +12,7 @@ which is the benchmark itself (bm1.c, bm2.c, etc). The reason for having
 two separate files is to prevent whole-program optimization that would skew
 the results. To get a proper result you should:
 
- - compile the driver.c file *once* with compiler A, to produce a
+ - compile the driver.c file *once* with any compiler, to produce a
    "driver.o" object file
  - compile the benchmark module (bmX.c) with each compiler you want to test
    and link the result with the driver.o file. eg:
