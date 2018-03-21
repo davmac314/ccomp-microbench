@@ -1,5 +1,7 @@
 /**
  This comes from gcc PR 21485 (marked as a 4.3/4.4/4.5 regression).
+ * https://gcc.gnu.org/bugzilla/show_bug.cgi?id=21485
+ * still open as of 201803
  */
 
 void 

@@ -6,8 +6,8 @@
  -march=core2 on a core2 processor. gcc-3.4.6 and llvm-2.5-gcc-4.2
  are more than 4 times slower.
 */
-
-void memcopy(char * restrict dest, char * restrict src, int size)
+//its a memcopy in disguise
+void bm4(char * restrict dest, char * restrict src, int size)
 {
     while (size-- != 0) {
         *dest++ = *src++;
