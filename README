@@ -1,9 +1,10 @@
 This is a set of small compiler benchmarks.
 
-It's in a rough state. There is no infrastructure - you have to individually
-compile and run the benchmarks with the different compilers you are interested
-in, and time the result. However, multiple people have expressed interest,
-so I am making the code publicly available.
+It's in a rough state. There is little infrastructure, although a contributed
+bash script to compile and run the benchmarks with different compilers is
+provided (requires GNU time). Alternatively, you can individually compile and
+run the benchmarks with the different compilers you are interested in, and time
+the result.
 
 Each directory bm1..bm10 contains one benchmark test.
 

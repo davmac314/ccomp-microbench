@@ -1,6 +1,6 @@
 /* #include <cstring> */
 #include <string.h>
-#include "structs.h"
+#include "strucs.h"
 
 /*
  This tests the compilers alias analysis. We allocate space on the stack,
