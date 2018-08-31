@@ -6,7 +6,7 @@ provided (requires GNU time). Alternatively, you can individually compile and
 run the benchmarks with the different compilers you are interested in, and time
 the result.
 
-Each directory bm1..bm10 contains one benchmark test.
+Each directory bm1..bmXX contains one benchmark test.
 
 Typically, there is a "driver" program (driver.c) and an additional module
 which is the benchmark itself (bm1.c, bm2.c, etc). The reason for having
@@ -24,7 +24,8 @@ the results. To get a proper result you should:
 	time ./a.out
 
  * Just to be clear, to compare two compilers, you should *not* recompile
-   driver.c with the second compiler.
+   driver.c with the second compiler. The performance of the driver should
+   not be measured. Link-time optimisation should not be used.
  * Note that the benchmarks are written in the C99 dialect.
  * Further information about individual benchmarks is usually in the
    comments in the bmX.c file
