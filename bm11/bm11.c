@@ -16,7 +16,6 @@
 //   int a1 = a[0];
 //   int a2 = a[1];
 //   int a3 = a[2];
-//   int a4 = a[3];
 //   for (int i = 0; i < n - 3; i++) {
 //     int a4 = a[3 + i];
 //     if (a1 > a4)
